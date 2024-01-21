@@ -78,3 +78,27 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+//PARA CURSOR DEL TECLADO EN GALERIA DE FOTOS Y QUE SE CAMBIEN
+
+document.addEventListener("DOMContentLoaded", function () {
+  const galleries = document.querySelectorAll(".gallery__container__img");
+
+  galleries.forEach((gallery) => {
+    const galleryImages = gallery.querySelectorAll(".gallery__image__img");
+
+    galleryImages.forEach((imageContainer, index) => {
+      const originalImage = imageContainer.querySelector("img");
+      const hoverImage = document.querySelector(`.hover-image[data-index="${index}"]`);
+
+      imageContainer.addEventListener("mouseenter", () => {
+        originalImage.style.display = "none";
+        hoverImage.style.display = "block";
+      });
+
+      imageContainer.addEventListener("mouseleave", () => {
+        originalImage.style.display = "block";
+        hoverImage.style.display = "none";
+      });
+    });
+  });
+});
