@@ -200,6 +200,131 @@ nav {
   margin: auto;
 }
 
+/*GALERIA DE ARBOLES Y MAXWIDHT*/
+.hover-image {
+  display: none;
+}
+
+.gallery__image__img:hover .hover-image {
+  display: block;
+}
+.gallery__container__img {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 300px;
+}
+
+.gallery__image__img {
+  position: relative;
+  isolation: isolate;
+}
+
+.gallery__image__img img {
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery__image__details__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery__image__details__img h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.gallery__image__details__img div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.gallery__image__details__img .btn__img {
+  padding-inline: 1rem;
+}
+
+.gallery__image__img:hover .gallery__image__details__img {
+  opacity: 1;
+}
+
+
+@media (width > 576px) {
+  .product__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__image:nth-child(4) {
+    grid-area: 1/2/2/3;
+  }
+
+  .article__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner__card {
+    justify-content: flex-start;
+  }
+
+  .banner__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 768px) {
+
+  .product__grid__img {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .gallery__container__img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery__image__img:nth-child(1) {
+    grid-area: 1/1/3/2;
+  }
+
+  .gallery__image__img:nth-child(2) {
+    grid-area: 1/2/2/3;
+  }
+
+  .gallery__image__img:nth-child(3) {
+    grid-area: 2/2/3/3;
+  }
+
+  .gallery__image__img:nth-child(4) {
+    grid-area: 1/3/3/4;
+  }
+
+
+}
+/*FIN GALERIA DE ARBOLES*/
+
 /*POLITICAS DE CALIDAD Y AMBIENTE*/
 .service {
   background-color: var(--extra-light);
