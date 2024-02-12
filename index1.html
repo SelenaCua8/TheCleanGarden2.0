@@ -6,6 +6,55 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HOLA</h1>
+    <img id="galeria" src="https://picsum.photos/id/200/400/400" alt="">
+<p id="mitexto">Vacas que me encontré paseando</p>
+
+
+<nav>
+ <ul>
+  <li><a onclick="cargarfoto(201,0)"><img src="https://picsum.photos/id/201/400/400" alt=""></a></li>
+  <li><a onclick="cargarfoto(202,1)"><img src="https://picsum.photos/id/202/400/400" alt=""></a></li>
+  <li><a onclick="cargarfoto(203,2)"><img src="https://picsum.photos/id/203/400/400" alt=""></a></li>
+  <li><a onclick="cargarfoto(204,3)"><img src="https://picsum.photos/id/204/400/400" alt=""></a></li>
+ </ul>
+</nav>
+<style>
+    body{ font-family: sans-serif; width: 450px; margin: auto;}
+
+#galeria{ width: 400px;}
+
+nav ul{ list-style:none; padding-left: 0; 
+ display:flex;
+}
+
+nav ul li a img{
+ width: 100px;
+ opacity:50%;
+ transition:0.3s;
+ filter:grayscale(50%);
+
+ 
+ &:hover{ opacity:100%;  margin-top:-5px;  filter:grayscale(0%);
+  box-shadow: 0 4px 8px rgba(0,0,0,.3)
+}
+ &:active{transform:scale(0.8)}
+ 
+}
+</style>
+<script>
+    var textos=[
+ "Mis gafas en el escritorio",
+ "Camino a la perdición",
+ "Paseando en bicicleta",
+ "Vias de el tren"
+]
+
+
+function cargarfoto(img, txt){
+document.getElementById("galeria").src="https://picsum.photos/id/"+img+"/400/400";
+document.getElementById("mitexto").innerHTML=textos[txt];
+}
+
+</script>
 </body>
 </html>

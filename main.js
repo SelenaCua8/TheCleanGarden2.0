@@ -27,9 +27,9 @@ window.addEventListener('load', function() {
   console.log('El contenido ha cargado');
 
   var imagenes = [
-    "url('./assets/jardinero-weedwacker-cortando-cesped-jardin.jpg')",
-    "url('./assets/life-mexico-landscape-with-trees.jpg')",
-    "url('./assets/podaDeArboles.jpg')"
+    "url('./imagenes/imagenes/juegos5.jpg')",
+    "url('./imagenes/imagenes/poda-de-arboles1.jpg')",
+    "url('./imagenes/imagenes/sillas-y-mesas.jpg')"
   ];
 
   var indiceImagenes = 0;
