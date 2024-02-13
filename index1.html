@@ -22,23 +22,68 @@
     </nav>
 
     <style>
+        :root {
+            --primary-color: rgba(26, 128, 0.5, 0.3); 
+          --primary-color-dark: rgb(103, 226, 103);
+          --secondary-color: #15151f;
+          --secondary-color-dark: #0a0b0f;
+          --text-light: #6b7280;
+          --extra-light: #f8f7fd;
+          --white: #ffffff;
+          --max-width: 1200px;
+        }
+
         body {
             text-align: center;
             font-family: sans-serif;
             width: 450px;
             margin: auto;
-            background-color: green;
+            background-color: var(--primary-color); /* Cambiar el color de fondo a la variable primary-color */
+            color: var(--white); /* Cambiar el color del texto a blanco */
         }
+        body {
+    background-image: url(fondo-degradado.png);
+    background-attachment: fixed;
+}
+body {
+	background: linear-gradient(-45deg, #f9faf8, #A9FDAC, #44CF6C, #18a02d);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
         #contenedor-imagen {
-            width: 400px;
+            width: 445px;
             height: 400px;
-            overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
-            margin-top: 50%; /* Ajusta según sea necesario */
+            overflow: hidden; 
+            margin-top: 50%; 
         }
 
         #galeria {
-            
             height: 100%;
             object-fit: cover;
         }
@@ -47,11 +92,11 @@
             list-style: none;
             padding-left: 0;
             display: flex;
-            margin-top: 20px; /* Ajusta según sea necesario */
+            margin-top: 20px; 
         }
 
         nav ul li {
-            margin-right: 10px; /* Espaciado entre las imágenes en la lista */
+            margin-right: 10px; 
         }
 
         nav ul li a img {
