@@ -1,6 +1,4 @@
 
-
-
 //header cambiar de imagen
 window.addEventListener('load', function() {
   //console.log('El contenido ha cargado');
