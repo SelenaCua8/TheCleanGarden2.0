@@ -17,6 +17,28 @@
   box-sizing: border-box;
 }
 
+/*HEADER*/
+nav {
+  position: fixed;
+  isolation: isolate;
+  top: 0;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+  z-index: 9;
+}
+.navbar{
+  padding: 0;
+  
+}
+.container-fluid{
+background-color: white;
+}
+.navbar-brand{
+margin-right: 20rem;
+}
+/*FIN HEADER*/
+/*QUIENES SOMOS*/
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -61,11 +83,9 @@ img {
   width: 100%;
   display: flex;
 }
+/*FIN QUIENES SOMOS*/
 
-.logo img {
-  max-width: 150px;
-}
-
+/*DECORACION LETRA*/
 a {
   text-decoration: none;
 }
@@ -158,37 +178,8 @@ nav {
   color: var(--white);
 }
 
-.banner__container {
-  display: grid;
-  grid-auto-rows: minmax(0, 350px);
-}
 
-.banner__card {
-  padding: 5rem 2rem;
-  display: grid;
-  place-content: center;
-}
 
-.banner__card:nth-child(1) {
-  background-color: var(--secondary-color);
-}
-
-.banner__card:nth-child(2) {
-  background-color: var(--secondary-color-dark);
-}
-
-.banner__card h4 {
-  max-width: 300px;
-  margin: auto;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.banner__image img {
-  height: 100%;
-  object-fit: cover;
-}
 
 .experience__container {
   display: grid;
@@ -200,68 +191,6 @@ nav {
   margin: auto;
 }
 
-/*GALERIA DE ARBOLES Y MAXWIDHT*/
-.hover-image {
-  display: none;
-}
-
-.gallery__image__img:hover .hover-image {
-  display: block;
-}
-.gallery__container__img {
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: 300px;
-}
-
-.gallery__image__img {
-  position: relative;
-  isolation: isolate;
-}
-
-.gallery__image__img img {
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.gallery__image__details__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-content: center;
-  gap: 1rem;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.gallery__image__details__img h4 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--white);
-}
-
-.gallery__image__details__img div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.gallery__image__details__img .btn__img {
-  padding-inline: 1rem;
-}
-
-.gallery__image__img:hover .gallery__image__details__img {
-  opacity: 1;
-}
 
 
 @media (width > 576px) {
@@ -269,14 +198,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .gallery__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .gallery__image:nth-child(4) {
-    grid-area: 1/2/2/3;
-  }
-
+  
   .article__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -301,25 +223,8 @@ nav {
     gap: 2rem;
   }
 
-  .gallery__container__img {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
-  .gallery__image__img:nth-child(1) {
-    grid-area: 1/1/3/2;
-  }
-
-  .gallery__image__img:nth-child(2) {
-    grid-area: 1/2/2/3;
-  }
-
-  .gallery__image__img:nth-child(3) {
-    grid-area: 2/2/3/3;
-  }
-
-  .gallery__image__img:nth-child(4) {
-    grid-area: 1/3/3/4;
-  }
+  
 
 
 }

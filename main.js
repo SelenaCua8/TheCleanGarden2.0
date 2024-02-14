@@ -1,35 +1,15 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = menuBtn.querySelector("i");
 
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
 
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute(
-    "class",
-    isOpen ? "ri-close-line" : "ri-menu-3-line"
-  );
-});
 
-navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-3-line");
-});
-
-const scrollRevealOptions = {
-  distance: "50px",
-  origin: "bottom",
-  duration: 1000,
-};
 //header cambiar de imagen
 window.addEventListener('load', function() {
-  console.log('El contenido ha cargado');
+  //console.log('El contenido ha cargado');
 
   var imagenes = [
-    "url('./imagenes/imagenes/juegos5.jpg')",
-    "url('./imagenes/imagenes/poda-de-arboles1.jpg')",
-    "url('./imagenes/imagenes/sillas-y-mesas.jpg')"
+    
+    "url('imagenes/PlazaRaviggnianiComuna11(2).jpg')",
+    "url('imagenes/TheCleanGardenimg2.jpg')",
+    "url('imagenes/sillas-y-mesas.jpg')"
   ];
 
   var indiceImagenes = 0;
@@ -48,7 +28,7 @@ window.addEventListener('load', function() {
   cargarSiguienteImagen();
 
   setInterval(cambiarImagenes, 3000);
-});
+})
 // header container
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOptions,
@@ -80,7 +60,7 @@ const swiper = new Swiper(".swiper", {
 
 //PARA CURSOR DEL TECLADO EN GALERIA DE FOTOS Y QUE SE CAMBIEN
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const galleries = document.querySelectorAll(".gallery__container__img");
 
   galleries.forEach((gallery) => {
@@ -101,4 +81,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-});
+});*/
