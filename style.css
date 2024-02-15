@@ -593,7 +593,7 @@ nav {
 }
 
 .question__box.active .content__question {
-  height: 100%;
+  height: auto;
   padding-top: 0.5rem;
 }
 
@@ -604,10 +604,12 @@ nav {
     padding-top: 5rem;
   }
 
-  
+  .content__question{
+    height: auto;
+  }
 
 
-  .question__box.active .content__question {
+  .question__box.active {
     height: 135px;
   }
 }
@@ -617,10 +619,13 @@ nav {
     font-size: 4rem;
     line-height: 5rem;
   }
+  .content__question{
+    height: auto;
+  }
 
 
 
-  .question__box.active .content__question {
+  .question__box.active {
     height: 180px;
   }
 
