@@ -610,7 +610,7 @@ nav {
 
 
   .question__box.active {
-    height: 135px;
+    height: auto;
   }
 }
 
@@ -626,7 +626,7 @@ nav {
 
 
   .question__box.active {
-    height: 180px;
+    height: 1auto;
   }
 
  
