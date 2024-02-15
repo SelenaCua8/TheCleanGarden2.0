@@ -44,17 +44,8 @@ ScrollReveal().reveal(".service__card", {
 });
 
 // price container
-ScrollReveal().reveal(".price__card", {
-  ...scrollRevealOptions,
-  interval: 500,
-});
 
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+
 
 //PARA CURSOR DEL TECLADO EN GALERIA DE FOTOS Y QUE SE CAMBIEN
 
@@ -80,3 +71,5 @@ const swiper = new Swiper(".swiper", {
     });
   });
 });*/
+
+

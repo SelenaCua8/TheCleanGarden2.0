@@ -11,6 +11,9 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;1,6..12,700&family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -26,22 +29,22 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
       <ul class="navbar-nav d-flex align-items-center">
         <li class="nav-item">
-          <a class="nav-link mx-2 active" aria-current="page" href="#">Menú</a>
+          <a class="nav-link mx-2 active roboto" aria-current="page" href="#">Menú</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-2" href="#">Servicios</a>
+          <a class="nav-link mx-2 roboto" href="#">Servicios</a>
         </li>
         <!--<li class="nav-item">
           <a class="nav-link mx-2" href="#">Preguntas Frecuentes</a>
         </li>-->
         <li class="nav-item dropdown">
-          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link mx-2 dropdown-toggle roboto" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Nosotros
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
-            <li><a class="dropdown-item" href="#"></a></li>
-            <li><a class="dropdown-item" href="#">Contacto</a></li>
+            <li><a class="dropdown-item roboto" href="#">Preguntas Frecuentes</a></li>
+            <li><a class="dropdown-item roboto" href="#"></a></li>
+            <li><a class="dropdown-item roboto" href="#">Contacto</a></li>
           </ul>
         </li>
       </ul>
@@ -49,24 +52,18 @@
   </div>
 </nav>
 
-
-
-
-  <div class="header">
+<div class="header">
     <div class="section__container header__container" id="home">
       <div class="header__content">
         <h1>The Clean Garden</h1>
         <div class="header__btn">
-          <button class="btn">Ver más</button>
+          <button class="btn roboto">Ver más</button>
         </div>
       </div>
     </div>
   </div>
-  <style>
-    
-  </style>
-  <!--FIN HEADER-->
-
+  
+<!--FIN HEADER-->
 
 <!--QUIENES SOMOS-->
     <section class="section__container experience__container" id="about">
@@ -74,80 +71,73 @@
         <img src="./imagenes/parque4.jpg" alt="experience" />
       </div>
       <div class="experience__content">
-        <p class="section__subheader">QUIENES SOMOS</p>
-        <h2 class="section__header">
+        <p class="section__subheader roboto">QUIENES SOMOS</p>
+        <h2 class="section__header roboto">
           Somos una empresa con más de 20 años de experiencia
         </h2>
-        <p class="section__description">
+        <p class="section__description roboto">
          Orientados a dar soluciones integrales para espacios verdes de mediana y gran escala en espacios públicos, empresas o particulares. <br> Los espacios verdes constituyen uno de los principales articuladores de la vida social. Son lugares de encuentro, de integración, promueven la diversidad cultural generan valor simbólico, identidad y pertenencia. Asimismo, contribuyen en la regulación hídrica y en la reducción del impacto de la ciudad o industria construida sobre el medio ambiente. Y ofrecen un ecosistema apropiado para la conservación de la biodiversidad.
         </p>
-        <button class="btn">Ver más</button>
+        <button class="btn roboto">Ver más</button>
       </div>
     </section>
 <!--FIN QUIENES SOMOS-->
-<!--CARD CONTENT-->
 
-<!--FIN CARD CONTENT-->
 <!--GALERIA DE FOTOS-->
 <div class="galeria">
  
   <div class="contenedor-imagenes">
-      <div class="imagen">
+      <div class="imagen" style="margin-bottom: 15px;">
        
-          <img src="./imagenes/imagenes/bebedero-de-perros.jpg" alt="">
+          <img src="imagenes/PlazaBlanffComuna10(5).jpg" alt="">
           <div class="overlay">
-               <h2>Construcciones</h2>
+               <a href="./galerias-de-fotos/galeria_poda.html"><h2 class="roboto">Contrucciones de parques</h2></a>
           </div>
       
       </div>
-      <div class="imagen">
-          <a href="index1.html"><img src="./imagenes/imagenes/corte-de-cesped.jpg" alt=""></a>
+      <div class="imagen" style="margin-bottom: 15px;">
+          <a href="index1.html"><img src="imagenes/tomografiaarbol3.jpg" alt=""></a>
           <div class="overlay">
-             <a href="index1.html"><h2>Tomografía de Árboles</h2></a> 
+             <a href="index1.html"><h2 class="roboto">Tomografía de Árboles</h2></a> 
           </div>
       </div>
-      <div class="imagen">
-          <img src="./imagenes/imagenes/futboltenis.jpg" alt="">
+      <div class="imagen" style="margin-bottom: 15px;">
+          <img src="imagenes/parque1.jpg" alt="" style="margin-bottom: 12px;">
           <div class="overlay">
-              <h2>Mantenimiento de espacios verdes</h2>
+              <h2 class="roboto">Mantenimiento de espacios verdes</h2>
           </div>
       </div>
-      <div class="imagen">
-          <img src="./imagenes/imagenes/limpieza-parque.jpg" alt="">
+    
+      <div class="imagen" style="margin-bottom: 15px;">
+          <img src="imagenes/riego.jpg" alt="">
           <div class="overlay">
-              <h2>Poda</h2>
+              <h2>Sistema de riego</h2>
           </div>
       </div>
-      <div class="imagen">
-          <img src="./imagenes/imagenes/parque8.jpg" alt="">
+      <div class="imagen" style="margin-bottom: 15px;">
+          <img src="imagenes/close-up-men-with-safety-vests-helmet.jpg" alt="">
           <div class="overlay">
-              <h2>Parques</h2>
+              <h2>Obra pública</h2>
           </div>
       </div>
-      <div class="imagen">
-          <img src="./imagenes/imagenes/poda-de-arboles.jpg" alt="">
+      <div class="imagen" style="margin-bottom: 15px;">
+          <img src="imagenes/vivero1.jpg" alt="">
           <div class="overlay">
-              <h2>Suscribete</h2>
+              <h2>Vivero propio</h2>
           </div>
       </div>
-      <div class="imagen">
-          <img src="./imagenes/imagenes/parque6.jpg" alt="">
-          <div class="overlay">
-              <h2>Suscribete</h2>
-          </div>
-      </div>
-      <div class="imagen">
+      <!--<div class="imagen" style="margin-bottom: 15px;">
           <a href=""><img src="./imagenes/imagenes/juegos.jpg" alt=""></a>
           <div class="overlay">
               <h2>Suscribete</h2>
           </div>
       </div>
-      <div class="imagen">
+      <div class="imagen" style="margin-bottom: 15px;">
           <img src="./imagenes/imagenes/parque4.jpg" alt="">
           <div class="overlay">
               <h2>Suscriberte</h2>
           </div>
-      </div>
+      </div>-->
     
 </div>
       <!-- <div class="imagen">
@@ -156,105 +146,6 @@
   </div>
 </div>
 
-<style>
-  *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.galeria{
-    font-family: 'open sans';
-}
-
-.galeria h1{
-    text-align: center;
-    margin:20px 0 15px 0;
-    font-weight: 300;
-}
-
-.linea{
-    border-top: 5px solid #13a41d;
-    margin-bottom: 40px;
-}
-
-.contenedor-imagenes{
-    display:flex;
-    width: 85%;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius:3px;
-}
-
-.contenedor-imagenes .imagen{
-    width: 32%;
-    position: relative;
-    height:250px;
-    margin-bottom:5px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
-}
-.imagen img{
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-}
-
-.overlay{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background:rgba(14, 197, 17, 0.781) ;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: .5s ease;
-}
-
-.overlay h2{
-    color: #fff;
-    font-weight: 300;
-    font-size:30px;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.imagen:hover .overlay{
-    height:100%;
-    cursor: pointer;
-}
-
-@media screen and (max-width:1000px){
-    .contenedor-imagenes{
-        width: 95%;
-    }
-}
-
-@media screen and (max-width:700px){
-    .contenedor-imagenes{
-        width: 90%;
-    }
-    .contenedor-imagenes .imagen{
-        width: 48%;
-    }
-}
-
-@media screen and (max-width:450px){
-    h1{
-        font-size:22px;
-    }
-    .contenedor-imagenes{
-        width: 98%;
-    }
-    .contenedor-imagenes .imagen{
-        width: 80%;
-    }
-}
-
-</style>
 
 <!--FIN GALERIA DE FOTOS-->
 
@@ -313,7 +204,7 @@
     <h2 class="section__header">Normas ISO 9001:2015 y 14001:2015</h2>
      <div class="service__grid">
       <div class="img__iso">
-        <img src="assets/Logo_iso.jpg" alt="service"  class="iso__img"/>
+        <img src="imagenes/logo_iso.jpg" alt="service"  class="iso__img"/>
        
       </div>
     </div>
@@ -332,7 +223,7 @@
 <!--FORMULARIO-->
     <section class="section__container contact__container" id="contact">
       <div class="contact__image">
-        <img src="assets/jardinero-weedwacker-cortando-cesped-jardin.jpg" alt="contact" />
+        <img src="imagenes/parque1.jpg" alt="contact" />
       </div>
       <div class="contact__content">
         <h2 class="section__header">Contactanos</h2>
@@ -363,7 +254,7 @@
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="testimonial__card">
-              <img src="assets/ClienteAsociacionDePolo.jpeg" alt="testimonial" />
+              <img src="Clientes/ClienteAsociacionDePolo.jpeg" alt="testimonial" />
              
               <h4>- Asociación Argentina de Polo</h4>
             </div>
@@ -371,14 +262,14 @@
 
           <div class="swiper-slide">
             <div class="testimonial__card">
-              <img src="assets/ClienteAysa.png" alt="testimonial" />
+              <img src="Clientes/ClienteAysa.png" alt="testimonial" />
              
               <h4>- AYSA</h4>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="testimonial__card">
-              <img src="assets/ClienteBuenosAiresCiudad.jpeg" alt="testimonial" />
+              <img src="Clientes/ClienteBuenosAiresCiudad.jpeg" alt="testimonial" />
              
               <h4>- Buenos Aires Ciudad
               </h4>
@@ -386,28 +277,28 @@
           </div>
           <div class="swiper-slide">
             <div class="testimonial__card">
-              <img src="assets/ClienteBuquebus.png" alt="testimonial" />
+              <img src="Clientes/ClienteBuquebus.png" alt="testimonial" />
              
               <h4>- Buquebus</h4>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="testimonial__card">
-              <img src="assets/ClienteEmbajadaEstadosUnidos.jpeg" alt="testimonial" />
+              <img src="Clientes/ClienteEmbajadaEstadosUnidos.jpeg" alt="testimonial" />
              
               <h4>- Embajada de Estados Unidos</h4>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="testimonial__card">
-              <img src="assets/ClienteEmbajadaBritanicaBuenosAires.jpeg" alt="testimonial" />
+              <img src="Clientes/ClienteEmbajadaBritanicaBuenosAires.jpeg" alt="testimonial" />
              
               <h4>- Embajada Británica de Buenos Aires</h4>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="testimonial__card">
-              <img src="assets/ClienteFerromel.jpeg" alt="testimonial"/>
+              <img src="Clientes/ClienteFerromel.jpeg" alt="testimonial"/>
              
               <h4>- Ferromel</h4>
             </div>
@@ -418,6 +309,17 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+  <script>
+     document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper('.swiper', {
+          pagination: '.swiper-pagination',
+          slidesPerView: 'auto',
+          paginationClickable: true,
+          spaceBetween: 0
+        });
+      });
+  </script>
+ 
   <!--FIN CLIENTES-->
   <!--FONDO VERDE-->
   <section class="customisation">
@@ -434,11 +336,19 @@
       <div class="question__accordian">
         <div class="question__box">
           <div class="title__question">
-            <span>¿Cuáles son los servicios que ofrece su empresa de mantenimiento de espacios verdes y construcciones?</span>
+            <span>¿Cuáles son los servicios que ofrece su empresa?</span>
             <span class="icon"><i class="ri-add-fill"></i></span>
           </div>
           <div class="content__question">
-            Nuestra empresa se especializa en una amplia gama de servicios para el cuidado y mejora de espacios verdes. Ofrecemos mantenimiento de jardines, construcciones paisajísticas, sistemas de riego personalizados, poda de árboles y extracción de vegetación no deseada. Estamos comprometidos a proporcionar soluciones integrales para satisfacer todas las necesidades relacionadas con el diseño y mantenimiento de áreas verdes.
+            Nos dedicamos a una amplia rama de servicios de espacios verdes entre ellos se encuentran: <br>
+            Tomografía de árboles. <br>
+            Poda, transplante y extracción de ejemplares.  <br>
+            Diseño y planificación del paisaje. <br>
+            Construcción y mantenimiento de fuentes, cascadas y juegos de agua. <br>
+            Mantenimiento de espacios verdes. <br>
+            Diseño y construcción de sistema de riego. <br>
+            Obra pública.
+            
           </div>
         </div>
         <div class="question__box">
@@ -471,26 +381,32 @@
         </div>
         <div class="question__box">
           <div class="title__question">
-            <span>¿Cuáles son los servicios que ofrece su empresa de mantenimiento de espacios verdes y construcciones?</span>
+            <span>¿Cómo es su forma de trabajo?</span>
             <span class="icon"><i class="ri-add-fill"></i></span>
           </div>
           <div class="content__question">
-            Nuestra empresa se especializa en una amplia gama de servicios para el cuidado y mejora de espacios verdes. Ofrecemos mantenimiento de jardines, construcciones paisajísticas, sistemas de riego personalizados, poda de árboles y extracción de vegetación no deseada. Estamos comprometidos a proporcionar soluciones integrales para satisfacer todas las necesidades relacionadas con el diseño y mantenimiento de áreas verdes.
+            La forma de trabajo de nuestra empresa se centra en brindar soluciones integrales en construcción, espacios verdes y paisajismo, respaldadas por un compromiso continuo con el medio ambiente y la satisfacción del cliente. Nuestro enfoque se basa en los siguientes principios: <br>
+          1.Sostenibilidad Ambiental. <br>
+          2.Diseño Paisajístico. <br>
+          3.Vivero Propio. <br>
+          4.Colaboración con Clientes. <br>
+          5.Calidad y seguridad. <br>
+          6.Innovación y Mejora Continua. <br>
+          En resumen, nuestra forma de trabajo se basa en la excelencia, la sostenibilidad y la satisfacción del cliente, con un enfoque especial en la creación de entornos que armonicen con la naturaleza y contribuyan positivamente al medio ambiente.
           </div>
         </div>
       </div>
     </section>
   </section>
-  
-  <script>
-    const questionBox = document.getElementsByClassName("question__box");
+<script>
+  const questionBox = document.getElementsByClassName("question__box");
 
-    for (let i = 0; i < questionBox.length; i++) {
-      questionBox[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-      });
-    }
-  </script>
+for (let i = 0; i < questionBox.length; i++) {
+  questionBox[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
+}
+</script>
   <!--FIN PREGUNTAS FRECUENTAS-->
 
 
@@ -511,7 +427,7 @@
       <div class="section__container footer__container">
         <div class="footer__col">
           <div class="logo footer__logo">
-            <a href="#"><img src="assets/logo.jpg" alt="logo" /></a>
+            <a href="#"><img src="Clientes/theCleanGarden.jpg" alt="logo" style="width: 120px;" /></a>
           </div>
           <p class="section__description">
             Con más de 25 años de experiencia en mantenimiento, creación de espacios verdes y más.
