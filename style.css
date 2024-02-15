@@ -360,9 +360,11 @@ nav {
 
 */
 .img__iso{
+
+  
+  
+  width: 250px; margin: auto;
   margin-bottom: 50px;
-  margin-top: 0;
-  width: 50%; margin-left: 30%;
  
 }
 /*FIN NORMAS ISO*/
