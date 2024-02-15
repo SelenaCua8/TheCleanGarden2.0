@@ -316,9 +316,6 @@ nav {
 /*FIN GALERIA DE ARBOLES*/
 
 /*POLITICAS DE CALIDAD Y AMBIENTE*/
-.service {
-  background-color: var(--extra-light);
-}
 
 .service__container {
   text-align: center;
@@ -356,17 +353,17 @@ nav {
 }
 /*FIN POLITICAS DE CALIDAD Y AMBIENTE*/
 /*NORMAS ISO*/
-.iso__img{
+/*.iso__img{
   transform: translateX(160%);
 }
-@media (max-width: 768px) {
-  .iso__img {
-    transform: translateX(50%);
-  }}
-  @media (min-width: 769px) and (max-width: 1200px) {
-  .iso__img {
-      transform: translateX(160%);
-  }
+
+
+*/
+.img__iso{
+  margin-bottom: 50px;
+  margin-top: 0;
+  width: 50%; margin-left: 30%;
+ 
 }
 /*FIN NORMAS ISO*/
 /*FONDO VERDE*/
@@ -415,7 +412,7 @@ nav {
 }
 
 .contact__image img {
-  max-width: 450px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -463,6 +460,33 @@ nav {
 
 .contact__container button:hover {
   background-color: var(--primary-color-dark);
+}
+@media (max-width: 900px) {
+  .contact__image img {
+    display: none;  /* Oculta la imagen cuando el ancho de la pantalla es menor a 1200px */
+  }
+
+  .contact__container {
+    grid-template-columns: 1fr;  /* Cambia a una columna para centrar el contenido */
+  }
+
+  .contact__content {
+    margin: auto;   /* Centra el contenido horizontalmente */
+  }
+
+  .contact__content form {
+    width: 100%;    /* Expande el formulario al 100% del ancho de la pantalla */
+  }
+
+  .contact__content .form__group {
+    grid-template-columns: 1fr;  /* Cambia a una columna para centrar los elementos del formulario */
+    gap: 1rem;
+  }
+
+  .contact__content textarea, .contact__content input {
+    width: 100%;    /* Ajusta el ancho de los elementos del formulario al 100% */
+    max-width: none; /* Elimina el ancho máximo para permitir el 100% de expansión */
+  }
 }
 /*FORMULARIO*/
 /*CLIENTES*/
@@ -567,8 +591,8 @@ nav {
 }
 
 .question__box.active .content__question {
-  height: auto;
-  padding-top: 1rem;
+  height: 100%;
+  padding-top: 0.5rem;
 }
 
 @media (width < 900px) {
@@ -818,7 +842,23 @@ button .btn{
   .footer__col:first-child {
     max-width: 400px;
   }
+  
 }
+/*
+@media screen and (max-width: 480px) {
+  .iso__img {
+    transform: translateX(150%);
+    width: 100%; /* Ajusta el ancho al 100% para que la imagen se ajuste al tamaño del contenedor */
+
+/*@media (max-width: 768px){
+  .iso__img {
+    transform: translateX(50%);
+}
+}*/
+
+
+  
+
 
 @media (width > 1024px) {
   .price__grid {

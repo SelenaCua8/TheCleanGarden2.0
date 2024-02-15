@@ -32,19 +32,19 @@
           <a class="nav-link mx-2 active roboto" aria-current="page" href="#">Menú</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-2 roboto" href="#">Servicios</a>
+          <a class="nav-link mx-2 roboto" href="#servicios">Servicios</a>
         </li>
         <!--<li class="nav-item">
           <a class="nav-link mx-2" href="#">Preguntas Frecuentes</a>
         </li>-->
         <li class="nav-item dropdown">
-          <a class="nav-link mx-2 dropdown-toggle roboto" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link mx-2 dropdown-toggle roboto" href="#about" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Nosotros
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item roboto" href="#">Preguntas Frecuentes</a></li>
+            <li><a class="dropdown-item roboto" href="#preguntasfrecuentes">Preguntas Frecuentes</a></li>
             <li><a class="dropdown-item roboto" href="#"></a></li>
-            <li><a class="dropdown-item roboto" href="#">Contacto</a></li>
+            <li><a class="dropdown-item roboto" href="#contacto">Contacto</a></li>
           </ul>
         </li>
       </ul>
@@ -57,7 +57,7 @@
       <div class="header__content">
         <h1>The Clean Garden</h1>
         <div class="header__btn">
-          <button class="btn roboto">Ver más</button>
+          <button class="btn roboto" href="#about">Ver más</button>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
        
           <img src="imagenes/PlazaBlanffComuna10(5).jpg" alt="">
           <div class="overlay">
-               <a href="./galerias-de-fotos/galeria_poda.html"><h2 class="roboto">Contrucciones de parques</h2></a>
+               <h2 class="roboto">Contrucciones de parques</h2>
           </div>
       
       </div>
@@ -198,17 +198,16 @@
 <!--FIN POLITICAS DE CALIDAD Y AMBIENTE-->
 
 <!--NORMAS ISO-->
-<section class="service" id="service" style="display: flex; align-items: center;">
+<section class="service" id="service" style="display: flex; align-items: center">
   <div class="section__container service__container" style="text-align: center;">
     <p class="section__subheader">Trabajamos bajo certificación</p>
     <h2 class="section__header">Normas ISO 9001:2015 y 14001:2015</h2>
-     <div class="service__grid">
-      <div class="img__iso">
-        <img src="imagenes/logo_iso.jpg" alt="service"  class="iso__img"/>
-       
-      </div>
-    </div>
 </section>
+<div class="img__iso">
+  <img src="imagenes/logo_iso.jpg" alt="service"  class="iso__img"/> 
+ 
+</div>
+
 <!--FIN NORMAS ISO-->
 
 <!--FONDO VERDE-->
@@ -223,7 +222,7 @@
 <!--FORMULARIO-->
     <section class="section__container contact__container" id="contact">
       <div class="contact__image">
-        <img src="imagenes/parque1.jpg" alt="contact" />
+        <img src="imagenes/parque1.jpg" alt="contact" class="contact-img"/>
       </div>
       <div class="contact__content">
         <h2 class="section__header">Contactanos</h2>
@@ -242,6 +241,7 @@
         </form>
       </div>
     </section>
+    
 <!--FIN FORMULARIO-->
 <!--CLIENTES-->
     <section class="section__container testimonial__container" id="client">
@@ -330,7 +330,7 @@
   </section>
 <!--FIN FONDO VERDE-->
   <!--PREGUNTAS FRECUENTES-->
-  <section class="body__question">
+  <section class="body__question" id="preguntasfrecuentes">
     <section class="section__container__question question__container">
       <h2 class="section__header__question">Preguntas frecuentes</h2>
       <div class="question__accordian">
