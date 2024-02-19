@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin: 50px;" class="roboto">Mantenimiento de espacios verdes</h1>
+    <div id="galeria">
+        
+        <div id="galeria_imagen">
+            <img id="imgGaleria" src="../imagenes/corte-de-cesped.jpg" />
+        </div>
+        <div id="galeria_miniaturas">
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/canteros.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/parque.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/parque11.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/poda-de-arboles1.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/PlazaEjercitoDeLosAndesComuna10(2).jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src" src="../imagenes/corte-de-cesped.jpg" />
+        </div>
+    </div>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+        #imgGaleria {
+            border: 1px solid #F2F2F2;
+            padding: 3px;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        #galeria, #galeria * {box-sizing:border-box}
+
+        #galeria {
+            border: 1px solid #EAEAEA;
+            padding-bottom: 0;
+            background: white;
+            width: 410px;
+            margin: 0 auto; /* Centra el contenedor galería horizontalmente */
+        }
+
+        #galeria_miniaturas {
+           
+            display: table;
+            margin: 0 auto;
+            text-align: center; /* Centra las miniaturas horizontalmente */
+        }
+
+        .miniatura {
+            width:  80px;
+            height:  80px;
+            float: left;
+            cursor: pointer;
+            padding: 5px;
+            margin: 10px 5px;
+            object-fit: cover;
+        }
+
+        .miniatura:hover {
+            opacity: .8;
+        }
+
+        .miniatura:active {
+            opacity: 1;
+        }
+    </style>
+</body>
+</html>
