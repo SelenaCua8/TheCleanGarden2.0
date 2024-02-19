@@ -3,15 +3,15 @@
 window.addEventListener('load', function() {
   //console.log('El contenido ha cargado');
 
-  var imagenes = [
+  let imagenes = [
     
     "url('imagenes/PlazaRaviggnianiComuna11(2).jpg')",
     "url('imagenes/TheCleanGardenimg2.jpg')",
     "url('imagenes/sillas-y-mesas.jpg')"
   ];
 
-  var indiceImagenes = 0;
-  var header = document.querySelector('.header');
+  let indiceImagenes = 0;
+  let header = document.querySelector('.header');
 
   function cargarSiguienteImagen() {
     indiceImagenes = (indiceImagenes + 1) % imagenes.length;
