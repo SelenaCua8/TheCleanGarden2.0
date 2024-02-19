@@ -351,6 +351,8 @@ nav {
 .service__card p {
   color: var(--text-light);
 }
+
+
 /*FIN POLITICAS DE CALIDAD Y AMBIENTE*/
 /*NORMAS ISO*/
 /*.iso__img{
@@ -670,7 +672,7 @@ nav {
 }
 
 .footer__logo {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer__socials {

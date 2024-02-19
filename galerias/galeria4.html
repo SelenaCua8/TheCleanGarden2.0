@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin: 50px;" class="roboto">Obra pública.</h1>
+    <div id="galeria">
+        
+        <div id="galeria_imagen">
+            <img id="imgGaleria" src="../imagenes/construccion5.jpg" />
+        </div>
+        <div id="galeria_miniaturas">
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/construccion.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/construccion1.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/construccion2.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/construccion3.jpg" />
+            
+        </div>
+    </div>
+    <p style="text-align: center; margin: 50px 200px 20px; padding: 0 200px; white-space: pre-line;">
+        Descubre un nuevo estándar en obras públicas con The Clean Garden. Nos especializamos en la creación y transformación de espacios urbanos, diseñando y construyendo parques, plazas y áreas recreativas que inspiran vida comunitaria.
+    
+        En The Clean Garden, nos enorgullece ofrecer servicios integrales, desde la planificación y diseño hasta la construcción y mantenimiento. Nuestro compromiso con la excelencia se refleja en cada proyecto que emprendemos.
+    
+        Nuestra experiencia abarca la instalación de innovadoras áreas de juegos, la creación de majestuosas fuentes de agua y el diseño y construcción de bebederos para perros, enfocándonos en proporcionar soluciones que mejoren la calidad de vida de la comunidad.
+    
+        Al elegirnos, optas por calidad garantizada, asesoramiento especializado y un ambiente controlado para el crecimiento y desarrollo de tus proyectos. Explora el diferencial de The Clean Garden en cada rincón urbano que tocamos. ¡Construyamos juntos un futuro vibrante y funcional para tu comunidad!
+    </p>
+    
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+        #imgGaleria {
+            border: 1px solid #F2F2F2;
+            padding: 3px;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        #galeria, #galeria * {box-sizing:border-box}
+
+        #galeria {
+            border: 1px solid #EAEAEA;
+            padding-bottom: 0;
+            background: white;
+            width: 410px;
+            margin: 0 auto; /* Centra el contenedor galería horizontalmente */
+        }
+
+        #galeria_miniaturas {
+           
+            display: table;
+            margin: 0 auto;
+            text-align: center; /* Centra las miniaturas horizontalmente */
+        }
+
+        .miniatura {
+            width:  80px;
+            height:  80px;
+            float: left;
+            cursor: pointer;
+            padding: 5px;
+            margin: 10px 5px;
+            object-fit: cover;
+        }
+
+        .miniatura:hover {
+            opacity: .8;
+        }
+
+        .miniatura:active {
+            opacity: 1;
+        }
+    </style>
+</body>
+</html>

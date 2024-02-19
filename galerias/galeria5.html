@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin: 50px;" class="roboto">Vivero propio.</h1>
+    
+    <div id="galeria">
+        
+        <div id="galeria_imagen">
+            <img id="imgGaleria" src="../imagenes/vivero.jpg" />
+        </div>
+        <div id="galeria_miniaturas">
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/vivero1.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/vivero2.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/vivero3.jpg" />
+            <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../imagenes/vivero4.jpg" />
+            
+        </div>
+
+    </div>
+    <p style="text-align: center; margin: 50px 200px 20px; padding: 0 200px; white-space: pre-line;">
+        Bienvenido a The Clean Garden, donde cuidamos de la naturaleza con pasión. Nuestro vivero exclusivo garantiza plantas de la más alta calidad, gracias a un equipo experto y un entorno propicio para su desarrollo.
+    
+        Beneficios de nuestro vivero:
+        
+        - Calidad garantizada: Todas nuestras plantas provienen de nuestro vivero, asegurando estándares excepcionales.
+        - Asesoramiento especializado: Nuestro equipo brinda consejos para el cuidado óptimo de tus plantas.
+        - Ambiente controlado: Creamos un entorno ideal para que cada planta alcance su máximo potencial.
+    
+        Explora y descubre la diferencia en cada detalle. En The Clean Garden, no solo vendemos plantas; compartimos la pasión por la vida verde. ¡Cuida de tus plantas tanto como nosotros lo hacemos en nuestro vivero!
+    </p>
+    
+   
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        #imgGaleria {
+            border: 1px solid #F2F2F2;
+            padding: 3px;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        #galeria, #galeria * {box-sizing:border-box}
+
+        #galeria {
+            border: 1px solid #EAEAEA;
+            padding-bottom: 0;
+            background: white;
+            width: 410px;
+            margin: 0 auto; /* Centra el contenedor galería horizontalmente */
+        }
+
+        #galeria_miniaturas {
+            display: table;
+            margin: 0 auto;
+            text-align: center; /* Centra las miniaturas horizontalmente */
+        }
+
+        .miniatura {
+            width:  80px;
+            height:  80px;
+            float: left;
+            cursor: pointer;
+            padding: 5px;
+            margin: 10px 5px;
+            object-fit: cover;
+        }
+
+        .miniatura:hover {
+            opacity: .8;
+        }
+
+        .miniatura:active {
+            opacity: 1;
+        }
+    </style>
+</body>
+</html>
