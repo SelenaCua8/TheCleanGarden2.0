@@ -2,6 +2,7 @@
 .roboto {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  
 }
 p {
     text-align: center;
@@ -9,6 +10,7 @@ p {
     margin: 200px; /* Ajusta el valor según tus preferencias */
     margin-top: 0;
     margin-bottom: 0;
+   
 }
 @media screen and (max-width: 800px) {
     p {

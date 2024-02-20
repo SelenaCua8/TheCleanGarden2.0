@@ -28,6 +28,7 @@ window.addEventListener('load', function() {
   setInterval(cambiarImagenes, 3000);
 })
 // header container
+let scrollRevealOptions;
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOptions,
 });
