@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+p {
+    text-align: center;
+    white-space: pre-line;
+    margin: 200px; /* Ajusta el valor según tus preferencias */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 800px) {
+    p {
+        margin: 10px;
+    }
+}
+
+        #imgGaleria {
+            border: 1px solid #F2F2F2;
+            padding: 3px;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        #galeria, #galeria * {box-sizing:border-box}
+
+        #galeria {
+            border: 1px solid #EAEAEA;
+            padding-bottom: 0;
+            background: white;
+            width: 410px;
+            margin: 0 auto; /* Centra el contenedor galería horizontalmente */
+        }
+
+        #galeria_miniaturas {
+           
+            display: table;
+            margin: 0 auto;
+            text-align: center; /* Centra las miniaturas horizontalmente */
+        }
+
+        .miniatura {
+            width:  80px;
+            height:  80px;
+            float: left;
+            cursor: pointer;
+            padding: 5px;
+            margin: 10px 5px;
+            object-fit: cover;
+        }
+
+        .miniatura:hover {
+            opacity: .8;
+        }
+
+        .miniatura:active {
+            opacity: 1;
+        }
